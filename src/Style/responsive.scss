@@ -1,0 +1,52 @@
+@media (max-width:700px) {
+    .navwrapper{
+        flex-direction:column;
+        padding: 5rem;
+        img{
+            display: none;
+
+        }
+    }
+   .homewrapper{
+   flex-direction: column;
+   align-items: center;
+               
+    .hl{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    
+        
+    }
+    img{
+        display: none;
+    }
+   
+
+}
+.hMain{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    .H-Intro{
+        font-size: 8px;  
+    }
+}
+.search{
+    flex-direction: column;
+    gap: 5px;
+}
+.search-i{
+    height: 4vh;
+    border-radius: 2em;
+    font-size: large;
+    width: 16em;
+}
+.search-button{
+    display: block;
+}
+.card-wrapper{
+    width: 45vw;
+}
+}

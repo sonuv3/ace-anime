@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+import './Style/responsive.scss'
+import { useState } from "react";
+import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import { Container, Paper, Switch } from "@mui/material";
+import Navbar from "./Components/Navbar";
+import "./Style/style.scss";
+import Home from "./Components/Home";
+import Footer from "./Components/Footer";
 
 function App() {
+  const [mode, setMode] = useState(false);
+  const theme = createTheme({
+    palette: {
+      mode: mode ? "dark" : "light",
+    },
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Paper>
+        <Paper
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+          maxWidth="100vw"
+          elevation={0}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Navbar></Navbar>
+          <Switch
+            onClick={() => {
+              setMode(!mode);
+            }}
+            sx={{
+              position: "absolute",
+              right: "55px",
+            }}
+          ></Switch>
+        </Paper>
+      </Paper>
+      <Home></Home>
+      <Footer></Footer>
+    </ThemeProvider>
   );
 }
-
 export default App;

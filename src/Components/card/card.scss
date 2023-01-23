@@ -1,0 +1,33 @@
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba($color: #dedede81, $alpha: 4.0);
+    width: 12vw;
+    height: 45vh;
+    margin: 2rem;
+    align-items: center;
+    justify-content: space-around;
+
+    h3{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: rgb(255, 140, 0);
+    }
+    img{
+        width: 10vw;
+    }
+
+}
+.card-wrapper:hover{
+    background-image: linear-gradient(to top, red , yellow);
+}
+@media (max-width:700px) {
+
+    .card-wrapper{
+        width: 25vw;
+        height: 27vh;
+        margin: 1rem;
+    }
+
+
+
+}
