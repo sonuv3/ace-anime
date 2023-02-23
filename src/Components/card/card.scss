@@ -7,13 +7,14 @@
     margin: 2rem;
     align-items: center;
     justify-content: space-around;
+    overflow: hidden;
 
     h3{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         color: rgb(255, 140, 0);
     }
     img{
-        width: 10vw;
+        height: 70%;
     }
 
 }
@@ -23,9 +24,18 @@
 @media (max-width:700px) {
 
     .card-wrapper{
+        overflow: hidden;
         width: 25vw;
         height: 27vh;
         margin: 1rem;
+        img{
+            height: 70%;
+        }
+        h3{
+            line-height: 20px;
+            font-size: 0.8rem;
+            overflow: hidden;
+        }
     }
 
 

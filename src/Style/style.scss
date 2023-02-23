@@ -1,153 +1,353 @@
-*{
-    scroll-behavior: smooth;
+* {
+  scroll-behavior: smooth;
 }
-.flex-c{
-    display: flex;
-    align-items: center;
-    margin: 0 1rem;
-    flex-direction: column;
-
+.flex-c {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+  flex-direction: column;
 }
-.flex{
-    display: flex;
-    align-items: center;
-    margin: 0 1rem;
+.flex {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
 }
-.link{
-    text-decoration: none;
+.link {
+  text-decoration: none;
 }
-.navwrapper{
-    display: flex;
-    justify-content: center;
-    gap: 10%;
-    align-items: center;
-    padding: 1% 4%;
-    width: 100vw;
-     background: rgb(242,213,0);
-background: linear-gradient(181deg, rgba(242,213,0,1) 0%, rgba(255, 119, 0, 0.884) 65%); 
-    img{
-        background-color: #FF5100;
-        width: 65px;
-        padding: -5px;
-        position: relative;
-        left: -10%;
+.navwrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  align-items: center;
+  padding: 1% 4%;
+  width: 100vw;
+  background: rgb(242, 213, 0);
+  background: linear-gradient(
+    181deg,
+    rgba(242, 213, 0, 1) 0%,
+    rgba(255, 119, 0, 0.884) 65%
+  );
+  .mobile-menu-icon{
+    display: none;
+  }
+  img {
+    background-color: #ff5100;
+    width: 65px;
+    padding: -5px;
+    position: relative;
+    left: -10%;
+  }
+  a {
+    font-size: 155%;
+    color: #ff5100;
+    font-weight: bolder;
+  }
+}
+.homewrapper {
+  height: 90vh;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-around;
+  background: rgb(242, 213, 0);
+  background: linear-gradient(
+    187deg,
+    rgba(242, 213, 0, 0.6936975473783263) 0%,
+    rgba(255, 224, 0, 0.6320728975183824) 66%
+  );
+  flex: 2;
+  .hl {
+    margin-right: -10vw;
+    .b-font {
+      margin: 0 0 0 0px;
+      font-size: 3rem;
+      font-family: "Times New Roman", Times, serif;
     }
-   a{
-        font-size: 155%;
-        color: #FF5100;
-        font-weight: bolder;
+    .n-font {
+      font-size: 1.5rem;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     }
-
-}
-.homewrapper{
-    height: 90vh;
-    display: flex;
-    overflow: hidden;
-    justify-content: space-around;
-    background: rgb(242,213,0);
-    background: linear-gradient(187deg, rgba(242,213,0,0.6936975473783263) 0%, rgba(255,224,0,0.6320728975183824) 66%); 
-    flex: 2;            
-    .hl{
-        margin-right: -10vw;
-        .b-font{  
-            margin:0 0 0 0px;
-            font-size: 3rem;
-            font-family: 'Times New Roman', Times, serif;
-        }
-        .n-font{
-            font-size: 1.5rem;
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-    }
-    img{
-     margin-top: 90px;
-     margin-left: -20px;
+  }
+  img {
+    margin-top: 90px;
+    margin-left: -20px;
     height: 30rem;
-    box-shadow: #FF5100 22px;
+    box-shadow: #ff5100 22px;
     align-self: center;
+  }
+}
+.hMain {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  padding: 0 3% 4% 3%;
+
+  .H-Intro {
+    width: 70%;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    margin: auto;
+    color: rgb(94, 94, 94);
+    font-size: 16px;
+    padding: 15px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+.MAINCOLOR {
+  background: rgb(242, 213, 0);
+  background: linear-gradient(
+    187deg,
+    rgba(242, 213, 0, 0.6936975473783263) 0%,
+    rgba(255, 224, 0, 0.6320728975183824) 66%
+  );
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: linear-gradient(
+    to top right,
+    rgba(255, 234, 0, 0.508),
+    rgba(255, 255, 0, 0.708)
+  );
+  border-radius: 2px solid orange;
+}
+.search-i {
+  height: 4vh;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to top right,
+    rgba(5, 194, 252, 0.508),
+    rgba(3, 249, 216, 0.13)
+  );
+  font-size: large;
+}
+.search-button {
+  height: 35px;
+  background: orange;
+  border-radius: 25px;
+}
+.footer {
+    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 5rem;
+  width: 100vw;
+  background-color: red;
+  height: 40vh;
+  font-size: 0.7rem;
+  .footr {
+    display: flex;
+    flex-direction: column;
+    div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
-   
-
-}
-.hMain{
-    display: flex;
-        flex-direction: column;
-    
-     
-padding:0 3% 4% 3%;
-
-    .H-Intro{
-        width: 70%;
-        background-color: antiquewhite;
-        border-radius: 20px;
-        margin: auto;
-        color: rgb(94, 94, 94);
-        font-size: 16px;
-        padding: 15px;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        
+    .icons-style {
+      color: white;
     }
-}
-.MAINCOLOR{
-    background: rgb(242,213,0);
-background: linear-gradient(187deg, rgba(242,213,0,0.6936975473783263) 0%, rgba(255,224,0,0.6320728975183824) 66%); 
-}
-.content{
+  }
+  .footl {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-image: linear-gradient(to top right, rgba(255, 234, 0, 0.508) , rgba(255, 255, 0, 0.708));
-    border-radius: 2px solid orange ;
-    margin-top: 20vh;
+    flex-direction: column;
+    div {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .icons-style {
+      color: white;
+    }
+  }
 }
-.search-i{
-        height: 4vh;
-        border-radius: 1em;
-        font-size: large;
+.glass {
+  background-color: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(5px);
 }
-.search-button{
-height: 35px;
-background: orange;
-border-radius: 25px;
-}
-.footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-
-    
+.about {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(aceb.jpg);
+  margin: 0;
   
+
+  align-items: center;
+  .c1 {
+    width: 15%;
+    height: 32%;
+    border-radius: 50%;
+    background-color: orangered;
+    position: relative;
+    top: -32vh;
+    left: 20vw;
+  }
+
+  .about-wrapper {
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    box-shadow: -15px 32px 94px black;
+    padding: 4rem;
+    flex-wrap: wrap;
+    word-wrap: normal;
+  }
+  img {
+    width: 20%;
+  }
+  h1 {
+    color: #ff5100;
+    font-size: 2.5rem;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: bold;
+  }
+  p {
+    color: orangered;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    word-wrap: normal;
+    width: 86%;
+    height: 60%;
+  }
+
+}
+@media (max-width:900px),(max-height:500px){
+ 
+    .about{
+        background-image: url("./acep.jpeg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin: 0;
+        object-fit: contain;
+        max-height: 94vh;
+        .c1{
+            display:none;
+        }
+        .about-wrapper{
+            width: 90%;
+            height: 80%;
+            background-color: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.6)
+  );
+            .img{
+                width: 32%;
+
+            }
+            h1{
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: 0.6rem;
+            }
+        }
+    }    
+}
+.contact{
+    overflow: hidden;
+    height: 100vh;
     width: 100vw;
-    background-color: red;
-    height: 40vh;
-    .footr{
+    background-color: black;
+    margin: 0;
+    align-items: center;
+    .c1 {
+        width: 15%;
+        height: 32%;
+        border-radius: 50%;
+        background-color: orangered;
+        position: relative;
+        top: -36vh;
+        left: 20vw;
+      }
+    .contact-wrap{
+        
         display: flex;
-        flex-direction: column;
-        div{
+        justify-content: space-evenly;
+        padding: 2rem;
+        border-radius: 25px;
+        align-items: center;
+        margin: auto;
+        background:linear-gradient(to right bottom,rgba(255,2,54,0.5),rgba(255,2,54,0.6));
+        backdrop-filter: blur(5px);
+        width: 60%;
+        
+        .contact-left{
+            margin: auto;
             display: flex;
+            flex-direction: column;
+            border-right:2px solid white ;
+            width: 50%;
             align-items: center;
-            gap: 10px;
+        
+            
+            h1{
+                font-size: 2rem;
+                color: orangered;
+            }
+            h2{
+                font-size: 1.5rem;
+                
+                color: wheat;
+
+            }
+            img{
+                height: 50%;
+                object-fit: contain;
+
+                border-radius: 0 77% 77% 0;
+                
+            }
+
 
         }
-        .icons-style{
-           
-            color: white;
-        }
-    }
-    .footl{
-        display: flex;
-        flex-direction: column;
-        div{
-            display: flex;
-            align-items: center;
-            gap: 15px;
+        .contact-r{
+            width: 50%;
+            height: 100%;
             
+            form{
+                height: 100%;
+                width: 100%;
+                position: relative;
+                top:-9rem;
+                gap: 2rem;
+                display: flex;
+                flex-direction: column;
+                input{
+                    width: 60%;
+                    height: 3rem;
+
+
+
+                }
+                h1{
+                    font-size: 2rem;
+                    color: orangered;
+                }
+                textarea{
+                    width: 100%;
+                }
+                button{
+                    width: 40%;
+                    font-size: 1.5rem;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    color: #ff5100;
+                    margin: auto;
+                }
+            }
         }
-        .icons-style{
-           
-            color: white;
-        }
+
     }
 }

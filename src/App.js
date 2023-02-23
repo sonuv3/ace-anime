@@ -8,6 +8,8 @@ import Navbar from "./Components/Navbar";
 import "./Style/style.scss";
 import Home from "./Components/Home";
 import Footer from "./Components/Footer";
+import About from "./Components/About";
+import Contact from "./Components/Contact";
 
 function App() {
   const [mode, setMode] = useState(false);
@@ -31,6 +33,7 @@ function App() {
           elevation={0}
         >
           <Navbar></Navbar>
+
           <Switch
             onClick={() => {
               setMode(!mode);
@@ -42,7 +45,9 @@ function App() {
           ></Switch>
         </Paper>
       </Paper>
-      <Home></Home>
+          <Home/>
+      <About/>
+      <Contact/>
       <Footer></Footer>
     </ThemeProvider>
   );

@@ -1,12 +1,58 @@
-@media (max-width:700px) {
-    .navwrapper{
-        flex-direction:column;
-        padding: 5rem;
-        img{
+@media (max-width:900px) ,(max-height:500px) {
+    .navwrapper {
+        flex-direction:row;
+        height: 10vh;
+        align-items: center;
+        transition: all 1s;
+        a{
             display: none;
-
+        }
+        svg.hamicon{
+            color: aliceblue;
+            width: 3rem;
+            height: 3rem;
+            position: absolute;
+            right: 8rem;
+            top: 1.5rem;
+        }
+        svg.mobile-menu-icon-open{
+            
+            display: inline-block;
+        }
+        svg.mobile-menu-icon-close{
+            display: none;
+        }
+        .logo{
+            position: relative;
+            left: -34vw;
         }
     }
+    .hamburger{
+        
+        height: 100vh;
+        flex-direction: column;
+        a{
+            display: flex;
+
+        }
+        .logo{
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+        }
+        svg.mobile-menu-icon-open{
+            display: none;
+        }
+        svg.mobile-menu-icon-close{
+            display: inline-block;
+            right: 5rem;
+         
+        }
+
+
+
+    }
+
    .homewrapper{
    flex-direction: column;
    align-items: center;
@@ -15,6 +61,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        p.n-font{
+            font-size: 1rem;
+            word-wrap: normal;
+            padding:0 5rem;
+        }
 
     
         
@@ -27,10 +78,15 @@
 }
 .hMain{
     padding: 0;
+    margin: 0px;
     display: flex;
     flex-direction: column;
-    .H-Intro{
-        font-size: 8px;  
+    div.H-Intro{
+        font-size: 15px;  
+        height: 30vh;
+        overflow-y: scroll;
+        scrollbar-width: none;
+
     }
 }
 .search{
@@ -39,14 +95,58 @@
 }
 .search-i{
     height: 4vh;
-    border-radius: 2em;
     font-size: large;
     width: 16em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(0, 0, 0, 0.696);
+    font-weight: bold;
 }
 .search-button{
     display: block;
 }
-.card-wrapper{
-    width: 45vw;
+.about{
+        
+    .about-wrapper{
+        p{
+            
+            font-size: 0.5rem;
+        }
+    }
+    
 }
+
+
+}
+@media (max-width:900px) ,(max-height:500px) {
+    .contact{
+        .c1{
+            display: none;
+        }
+        div.contact-wrap{
+            flex-direction: column;
+            margin: auto;
+            width: 90%;
+            div.contact-left{
+                display: none;
+            }
+            div.contact-r{
+                form{
+                position: initial;
+                width: 100%;
+                input{
+                    width: 100%;
+                    height: 30px;
+                }
+                textarea{
+                    height: 60px;
+                }
+                button{
+                    width: auto;
+                }
+            }
+                
+            }
+        }
+    }
+
 }
